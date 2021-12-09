@@ -1,0 +1,276 @@
+.headerBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.backButton {
+  width: 50px;
+  height: 50px;
+  padding: 15px 15px 15px 25px;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.profilePicture {
+  height: 75px;
+  width: 75px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  text-align: center;
+  font: 32px Arial, sans-serif;
+}
+
+.nameInitial {
+  text-align: center;
+  padding-top: 19px;
+  color: gray;
+}
+
+.contactInfo {
+  padding-left: 25px;
+}
+
+.nameFull {
+  font: 22px Segoe UI;
+  color: black;
+}
+
+.contact {
+  font: 15px SansSerif;
+}
+
+hr {
+  border-width: 1px;
+  border-color: black;
+}
+
+.dashedDate {
+  border-bottom: 3px dotted black;
+  text-align: center;
+  height: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+.dashedDate span {
+  background: #fff;
+  padding: 0 10px;
+  font: 19px SansSerif;
+}
+
+.blockRequestedMe {
+  height: 120px;
+  width: 450px;
+  background: ghostwhite;
+  font-size: 20px;
+  padding: 15px;
+  border: 2px solid black;
+  margin: 30px;
+  transition: transform 1000ms;
+  border-radius: 20px;
+  float: left;
+}
+
+.blockRequestedMe:hover {
+  background: #abe5d7;
+  color: dodgerblue;
+  transform: scale(1.09);
+}
+
+
+.blockPaid {
+  height: 120px;
+  width: 450px;
+  background: ghostwhite;
+  font-size: 20px;
+  padding: 15px;
+  border: 2px solid black;
+  margin: 30px;
+  transition: transform 1000ms;
+  border-radius: 20px;
+}
+
+.transactionDetails,
+.lowerDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+}
+.blockPaid:hover {
+  background-color: lightcoral;
+  color: white;
+  transform: scale(1.09);
+}
+
+
+
+.amountPaid,
+.amountStatus {
+  flex-basis: 1000px;
+}
+
+.amountPaid {
+  font: 50px Segoe UI;
+}
+
+.amountStatus {
+  font: 20px Segoe UI;
+  padding-left: 15%;
+}
+
+.amountStatus img {
+  width: 20px;
+}
+
+.TransactionID {
+  font: 15px Segoe UI;
+}
+
+.arrow img {
+  width: 15px;
+  height: 20px;
+  padding-right: 15px;
+  transition: transform 800ms;
+}
+
+.arrow img:hover {
+  transform: scale(1.5);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: rgba(28, 194, 125, 0.8);
+}
+
+.lowerDate {
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 0 0 0;
+  font: 15px Segoe UI;
+  color: black;
+}
+
+.blockRequested {
+  height: 120px;
+  width: 450px;
+  background: ghostwhite;
+  font-size: 20px;
+  padding: 15px;
+  border: 2px solid black;
+  margin: 30px;
+  transition: transform 1000ms;
+  border-radius: 20px;
+}
+
+.blockRequested:hover {
+  background-color: #abe5d7;
+  color: dodgerblue;
+  transform: scale(1.09);
+}
+
+.cancelButton,
+.payButton,
+.declineButton {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 10px 45px 10px 45px;
+  font: 18px bold Segoe UI;
+  transition: transform 500ms;
+}
+.payButton {
+  padding: 10px 25px 10px 25px;
+}
+
+.declineButton {
+  padding: 10px 50px 10px 50px;
+}
+
+.declineButtonContainer {
+  padding-right: 140px;
+}
+
+.cancelButton:hover,
+.declineButton:hover,
+.payButton:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 0, 0, 0.85);
+}
+
+.payButton:hover {
+  background-color: #00e872;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.blockReceived {
+  height: 120px;
+  width: 450px;
+  background: ghostwhite;
+  font-size: 20px;
+  padding: 15px;
+  border: 2px solid black;
+  margin: 30px;
+  transition: transform 1000ms;
+  border-radius: 20px;
+}
+
+.blockReceived:hover {
+  background: lightcoral;
+  color: white;
+  transform: scale(1.09);
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.infoPopup {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.63);
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.infoPopupContent {
+  width: 500px;
+  height: 750px;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+}
+
+.allInfo
+{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 15%;
+}
+
+.allInfo
+{
+  font: 20px Segoe UI;
+}
+
+.closeButton
+{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  cursor: pointer;
+}
